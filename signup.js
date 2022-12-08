@@ -82,7 +82,7 @@ form.addEventListener("submit", function (e) {
   checkPasswordMatch(password, password2);
 });
 
-form.addEventListener("submit", async (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   const dataObj = {
     username: userName.value,
@@ -97,9 +97,8 @@ form.addEventListener("submit", async (e) => {
       "Content-Type": "application/json",
     },
   })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
+    .then((e) => {
+      localStorage.setItem("user data", JSON.stringify(dataObj));
       window.location.href = "./succeed.html";
     })
     .catch((e) => {
