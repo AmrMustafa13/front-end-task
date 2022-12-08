@@ -77,6 +77,7 @@ main .content .form-controler small {
   left: 30px;
   visibility: hidden;
 }
+
 main .content .form-controler.error small {
   visibility: visible;
 }
