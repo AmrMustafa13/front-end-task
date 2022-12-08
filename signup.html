@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./signup.css" />
+    <script src="./signup.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="img">
+        <img src="./images/page2.png" alt="" />
+      </div>
+      <div class="content">
+        <form
+          class="form"
+          action="https://goldblv.com/api/hiring/tasks/register"
+          method="post"
+        >
+          <h2>Create Account</h2>
+          <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+          <div class="form-controler">
+            <img src="./images/User.svg" alt="" />
+            <input
+              type="text"
+              class="username"
+              name="username"
+              placeholder="Username"
+            />
+            <small>Error message</small>
+          </div>
+          <div class="form-controler">
+            <img src="./images/EnvelopeSimple.svg" alt="" />
+            <input
+              type="email"
+              class="email"
+              name="email"
+              placeholder="Email"
+            />
+            <small>Error message</small>
+          </div>
+          <div class="form-controler">
+            <img src="./images/LockKey.svg" alt="" />
+            <input
+              type="password"
+              class="password"
+              name="password"
+              placeholder="Password"
+            />
+            <small>Error message</small>
+          </div>
+          <div class="form-controler">
+            <img src="./images/LockKey.svg" alt="" />
+            <input
+              type="password"
+              class="password2"
+              name="password2"
+              placeholder="Confirm password"
+            />
+            <small>Error message</small>
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
