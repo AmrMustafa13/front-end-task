@@ -1,2 +1,1 @@
-# Live Preview 
-https://frontend-task-iota.vercel.app/
+# Front End Task
